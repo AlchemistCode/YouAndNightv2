@@ -1,0 +1,260 @@
+
+html{
+
+font-size:62,5%;
+
+}
+
+ul{
+list-style-type: none;
+
+font-style:italic;
+font-weight: bold;
+font-size: 30px;
+text-align: center;
+ 
+
+}
+    
+.colorBlanco{
+color: rgb(255, 255, 255);
+border:  10px white;
+}
+a{
+
+text-decoration: none;  
+
+}
+
+body{
+
+background-color: black;
+
+}
+
+header{
+
+background: linear-gradient(to bottom,black, rgb(58, 2, 63))
+
+
+
+}
+.logoTamaño{
+display: flex;
+height: 300px;
+width: 170px;
+
+
+}
+.centrar {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.menuPrincipal ul li{
+
+
+display: inline-block;
+padding: 20px 20px;
+}
+.nuevosModelos{
+
+font-size: 100px;
+font-weight: bold;
+
+}
+.redesSociales {
+position:fixed;
+right: 0px;
+bottom: 500px;
+
+}
+.redesSociales img {
+
+display: block;
+height: 50px;
+width: 50px;
+
+}
+/*footer{
+
+background-color: black;
+
+}*/
+.formulario{
+
+display: block;
+
+}
+.modelos{
+
+height: 500px;
+width: 400px;
+
+}
+.modelosPosicion{
+    display: flex;
+
+flex-direction: row;
+align-items: center;
+
+
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+ 
+    }
+
+.cajaPadre{
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 0,5fr 0,5fr 0,2fr ;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    
+    ;
+
+
+/*display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+/*flex-flow: column wrap;*
+
+align-items: stretch;*/
+
+
+}
+
+
+.areaEncabezado{
+
+grid-area: "header";
+
+
+}
+.areaContenido{
+    
+
+    grid-area: "main";
+
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+   
+    
+   
+    
+    
+    }
+.areaFooter{
+      
+       
+        grid-area: "footer";
+        background-color: black;
+        
+        
+        }
+ @keyframes aparecer  {
+
+    0% {opacity: 100%;}   
+
+    50% {opacity: 30%;}  
+
+    100% {opacity:100%;}  
+
+    } 
+    
+  .animacion  {
+
+    animation-name: aparecer;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }  
+
+  .bordeMenu { border: 1px solid white;
+    display: flex;
+   
+   
+  display: inline-block;
+
+}
+a:hover {
+    color: white;
+  }
+
+        
+@media screen and (max-width:500px) {
+
+    .cajaPadre{
+
+        
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 0,5fr 0,5fr 0,2...............qfr ;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+
+    
+}
+
+.modelosPosicion{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.areaContenido{
+
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+
+.nuevosModelos{
+
+    font-size: 50px;
+
+
+}
+.bordeMenu { border: 1px solid white;
+    display: flex;
+   
+  
+  flex-direction: column;
+  
+ }
+
+.menuPrincipal ul li{
+ display: flex;
+ flex-direction: column;
+ font-size: 25px;
+ 
+ 
+ padding: 15px 15px;
+
+}
+
+.animacion{
+
+    height: 300px;
+    width:  300px;
+
+}
+}
+
