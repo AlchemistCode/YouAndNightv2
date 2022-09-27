@@ -15,6 +15,12 @@ text-align: center;
  
 
 }
+ol{
+
+    list-style-type: circle;
+    font-size: 30px;
+    font-weight: bold;
+}
     
 .colorBlanco{
 color: rgb(255, 255, 255);
@@ -41,8 +47,8 @@ background: linear-gradient(to bottom,black, rgb(58, 2, 63))
 }
 .logoTamaño{
 display: flex;
-height: 300px;
-width: 170px;
+height: 150px;
+width: 100px;
 
 
 }
@@ -173,7 +179,8 @@ grid-area: "header";
     } 
     
   .animacion  {
-
+    height: 400px;
+    width:  400px;
     animation-name: aparecer;
     animation-delay: 1s;
     animation-duration: 4s;
@@ -256,5 +263,10 @@ align-items: center;
     width:  300px;
 
 }
+.modelos{
+
+    height: 250px;
+    width: 200px;
 }
 
+}
