@@ -1,0 +1,27 @@
+.menuPrincipal  {
+    
+    
+    display: inline-block;
+    padding: 20px 20px;
+     ul{
+        list-style-type: none;
+        
+        font-style:italic;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        li{
+    
+    
+            display: inline-block;
+            padding: 20px 20px;}
+    }
+    a{
+    
+        text-decoration: none; 
+        &:hover {
+            color: white;
+          } 
+        
+        }
+}

@@ -207,7 +207,7 @@ a:hover {
         
     
         grid-template-columns: 1fr;
-        grid-template-rows: 0,5fr 0,5fr 0,2...............qfr ;
+        grid-template-rows: 0,5fr 0,5fr 0,2fr ;
         grid-template-areas: 
             "header"
             "main"
