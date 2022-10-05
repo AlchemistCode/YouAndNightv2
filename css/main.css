@@ -35,10 +35,10 @@ body {
 header {
   background: linear-gradient(to bottom, black, #3a023f); }
 
-.logoTamaño {
+.logoTamaño, .modelos {
   display: flex;
-  height: 150px;
-  width: 100px; }
+  width: 100px;
+  height: 150px; }
 
 .centrar {
   display: flex;
@@ -82,8 +82,8 @@ header {
   bottom: 500px; }
   .redesSociales img {
     display: block;
-    height: 50px;
-    width: 50px; }
+    width: 50px;
+    height: 50px; }
 
 /*footer{
     

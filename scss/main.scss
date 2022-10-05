@@ -6,8 +6,22 @@ html{
     
     }
     
-$colorPincipal:black;
+$colorPrincipal:black;
 $colorSecundario: white;
+$estilos:(
+    color: $colorPrincipal,
+    colorDos: $colorSecundario,
+    alineacion: center
+
+
+
+);
+
+@mixin sizes($alto, $ancho) {
+    width:$ancho ;
+    height: $alto;
+    
+}
     ol{
     
         list-style-type: circle;
@@ -23,7 +37,7 @@ $colorSecundario: white;
     
     body{
     
-    background-color: $colorPincipal;
+    background-color: map-get($estilos, color);
     
     }
     
@@ -36,8 +50,8 @@ $colorSecundario: white;
     }
     .logoTamaño{
     display: flex;
-    height: 150px;
-    width: 100px;
+    @include sizes(150px,100px );
+   
     
     
     }
@@ -45,7 +59,7 @@ $colorSecundario: white;
     
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: map-get($estilos, alineacion );
     
     }
     /*.menuPrincipal  {
@@ -88,8 +102,8 @@ $colorSecundario: white;
       img {
     
         display: block;
-        height: 50px;
-        width: 50px;
+        @include sizes(50px,50px );
+        
 
     
     }
@@ -107,6 +121,7 @@ $colorSecundario: white;
     
     }
     .modelos{
+    @extend .logoTamaño;
     
     height: 500px;
     width: 400px;
@@ -114,6 +129,7 @@ $colorSecundario: white;
     
     }
     .modelosPosicion{
+        
         display: flex;
     
     flex-direction: row;
@@ -123,7 +139,7 @@ $colorSecundario: white;
     }
     
     main{
-        background-color: $colorSecundario;
+        background-color: map-get($estilos, colorDos);
      
         }
     
@@ -165,7 +181,7 @@ $colorSecundario: white;
     
         display: flex;
         flex-direction: column;
-       align-items: center;
+       align-items: map-get($estilos, alineacion );
        
        
         
@@ -177,7 +193,7 @@ $colorSecundario: white;
           
            
             grid-area: "footer";
-            background-color:$colorPincipal;
+            background-color:map-get($estilos , color );
             
             
             }
@@ -231,10 +247,11 @@ $colorSecundario: white;
     
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: map-get($estilos, alineacion );
     
     }
     .areaContenido{
+        
     
         background-color: brown;
         display: flex;
