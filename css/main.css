@@ -73,6 +73,7 @@ header {
         }
 }*/
 .nuevosModelos {
+  text-align: center;
   font-size: 100px;
   font-weight: bold; }
 
@@ -85,13 +86,21 @@ header {
     width: 50px;
     height: 50px; }
 
+.mapaNavegacion ul li {
+  font-size: 10px; }
+
+.mapaNavegacionDiv {
+  width: min-content; }
+
 /*footer{
     
     background-color: black;
     
     }*/
 .formulario {
-  display: block; }
+  display: block;
+  background-color: wheat;
+  margin: 20px; }
 
 .modelos {
   height: 500px;
@@ -100,7 +109,19 @@ header {
 .modelosPosicion {
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap; }
+
+.comprar {
+  background-color: #14dc2f;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 80px;
+  padding: 14px;
+  margin: 50px;
+  border: 1px solid #131212; }
 
 main {
   background-color: white; }

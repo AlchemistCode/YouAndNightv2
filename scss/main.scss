@@ -90,7 +90,7 @@ $estilos:(
         }
 }*/
     .nuevosModelos{
-    
+    text-align: center;
     font-size: 100px;
     font-weight: bold;
     
@@ -110,6 +110,15 @@ $estilos:(
     
     
     }
+    .mapaNavegacion ul li {
+
+        font-size: 10px;
+    }
+    .mapaNavegacionDiv{
+
+        width: min-content;
+
+    }
     /*footer{
     
     background-color: black;
@@ -118,6 +127,8 @@ $estilos:(
     .formulario{
     
     display: block;
+    background-color:wheat;
+     margin: 20px;
     
     }
     .modelos{
@@ -134,9 +145,26 @@ $estilos:(
     
     flex-direction: row;
     align-items: center;
-    
+    padding: 40px;
+    flex-wrap: wrap;
     
     }
+
+    .comprar{
+        background-color: rgb(20, 220, 47);
+         display:flex;
+        flex-direction: row;
+        
+        color: white;
+
+        font-size: 80px;
+        padding: 14px;
+        margin: 50px;
+        border: 1px solid rgb(19, 18, 18);
+        
+        
+        
+        }
     
     main{
         background-color: map-get($estilos, colorDos);
