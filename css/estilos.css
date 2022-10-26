@@ -7,11 +7,15 @@ font-size:62,5%;
 
 .menuPrincipal ul{
 list-style-type: none;
+display:flex;
+justify-content: center;
 
-font-style:italic;
+
 font-weight: bold;
 font-size: 30px;
 text-align: center;
+align-items: center;
+flex-wrap: wrap;
  
 
 }
@@ -73,7 +77,7 @@ background: linear-gradient(to bottom,black, rgb(58, 2, 63))
 
 }
 .logoTamaño{
-display: flex;
+/**display: block;**/
 height: 150px;
 width: 100px;
 
@@ -84,8 +88,25 @@ width: 100px;
 display: flex;
 flex-direction: row;
 justify-content: center;
+padding: 20px;
 
 }
+
+.centrarTexto{
+display: flex;
+text-align: center;
+text-justify: auto;
+font-family: Georgia, 'Times New Roman', Times, serif;
+padding: 20px;
+
+}
+.centrarLogo {
+
+    display: flex;
+    position: relative;
+    align-items: initial;
+    
+    }
 .menuPrincipal ul li{
 
 
@@ -93,10 +114,11 @@ display: inline-block;
 padding: 20px 20px;
 }
 .nuevosModelos{
-
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 text-align: center;
 font-size: 100px;
 font-weight: bold;
+color: rgb(43, 15, 121);
 
 }
 .redesSociales {
@@ -119,15 +141,28 @@ background-color: black;
 }*/
 .formulario{
 
-display: block;
-background-color:wheat;
-margin: 20px;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+background-color:rgb(177, 132, 207);
+margin: 20px;}
+.formularioTamaño{
+    display: flex;
+    border: 1px solid rgb(14, 13, 13);
+    width: 600px;
+    flex-wrap: wrap;
+
 
 }
+
+
+
+.imagen:hover {filter: opacity(.5);}
 .modelos{
 
 height: 500px;
 width: 400px;
+padding: 20px;
 
 }
 .modelosPosicion{
@@ -136,6 +171,8 @@ width: 400px;
 flex-direction: row;
 align-items: center;
 flex-wrap: wrap;
+justify-content: space-evenly;
+
 padding: 40px;
 
 
@@ -211,16 +248,15 @@ grid-area: "header";
     } 
     
   .animacion  {
-    height: 400px;
-    width:  400px;
+    height: 300px;
+    width:  300px;
     animation-name: aparecer;
     animation-delay: 1s;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }  
-
-  .bordeMenu { border: 1px solid white;
+.bordeMenu { /**border: 1px solid white;**/
     display: flex;
    
    
@@ -231,7 +267,7 @@ a:hover {
     color: white;
   }
 
-        
+         
 @media screen and (max-width:500px) {
 
     .cajaPadre{
@@ -257,7 +293,7 @@ align-items: center;
 }
 .areaContenido{
 
-    background-color: brown;
+    
     display: flex;
     flex-direction: column;
     
@@ -273,7 +309,7 @@ align-items: center;
 
 
 }
-.bordeMenu { border: 1px solid white;
+.bordeMenu { 
     display: flex;
    
   
@@ -302,5 +338,8 @@ align-items: center;
     height: 250px;
     width: 200px;
 }
+.formularioTamaño{
 
+    width: 300px;
+}
 }

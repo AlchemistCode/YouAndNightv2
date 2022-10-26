@@ -62,6 +62,14 @@ $estilos:(
     justify-content: map-get($estilos, alineacion );
     
     }
+    .centrarTexto{
+        display: flex;
+        text-align: center;
+        text-justify: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 20px;
+        
+        }
     /*.menuPrincipal  {
     
     
@@ -89,10 +97,12 @@ $estilos:(
         
         }
 }*/
-    .nuevosModelos{
+.nuevosModelos{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 100px;
     font-weight: bold;
+    color: rgb(43, 15, 121);
     
     }
     .redesSociales {
@@ -125,12 +135,21 @@ $estilos:(
     
     }*/
     .formulario{
-    
-    display: block;
-    background-color:wheat;
-     margin: 20px;
-    
-    }
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color:rgb(177, 132, 207);
+        margin: 20px;}
+        .formularioTamaño{
+            display: flex;
+            border: 1px solid rgb(14, 13, 13);
+            width: 600px;
+            flex-wrap: wrap;
+        
+        
+        }
+        
     .modelos{
     @extend .logoTamaño;
     
@@ -142,13 +161,26 @@ $estilos:(
     .modelosPosicion{
         
         display: flex;
-    
-    flex-direction: row;
-    align-items: center;
-    padding: 40px;
-    flex-wrap: wrap;
+
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        padding: 40px;
+        
+        
+        
     
     }
+    .imagen:hover {filter: opacity(.5);}
+.modelos{
+
+height: 500px;
+width: 400px;
+padding: 20px;
+
+}
 
     .comprar{
         background-color: rgb(20, 220, 47);
@@ -245,7 +277,7 @@ $estilos:(
         animation-timing-function: linear;
       }  
     
-      .bordeMenu { border: 1px solid white;
+      .bordeMenu { /**border: 1px solid white;**/
         display: flex;
        
        
@@ -281,7 +313,7 @@ $estilos:(
     .areaContenido{
         
     
-        background-color: brown;
+       
         display: flex;
         flex-direction: column;
         
@@ -295,7 +327,7 @@ $estilos:(
     
     
     }
-    .bordeMenu { border: 1px solid white;
+    .bordeMenu { 
         display: flex;
        
       
@@ -323,6 +355,10 @@ $estilos:(
     
         height: 250px;
         width: 200px;
+    }
+    .formularioTamaño{
+
+        width: 300px;
     }
     
     }

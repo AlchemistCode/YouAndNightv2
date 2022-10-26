@@ -5,10 +5,13 @@
   padding: 20px 20px; }
   .menuPrincipal ul {
     list-style-type: none;
-    font-style: italic;
+    display: flex;
+    justify-content: center;
     font-weight: bold;
     font-size: 30px;
-    text-align: center; }
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap; }
     .menuPrincipal ul li {
       display: inline-block;
       padding: 20px 20px; }
@@ -45,6 +48,13 @@ header {
   flex-direction: row;
   justify-content: center; }
 
+.centrarTexto {
+  display: flex;
+  text-align: center;
+  text-justify: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px; }
+
 /*.menuPrincipal  {
     
     
@@ -73,9 +83,11 @@ header {
         }
 }*/
 .nuevosModelos {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
   font-size: 100px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #2b0f79; }
 
 .redesSociales {
   position: fixed;
@@ -98,9 +110,17 @@ header {
     
     }*/
 .formulario {
-  display: block;
-  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #b184cf;
   margin: 20px; }
+
+.formularioTamaño {
+  display: flex;
+  border: 1px solid #0e0d0d;
+  width: 600px;
+  flex-wrap: wrap; }
 
 .modelos {
   height: 500px;
@@ -110,8 +130,17 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 40px;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px; }
+
+.imagen:hover {
+  filter: opacity(0.5); }
+
+.modelos {
+  height: 500px;
+  width: 400px;
+  padding: 20px; }
 
 .comprar {
   background-color: #14dc2f;
@@ -169,7 +198,7 @@ main {
   animation-timing-function: linear; }
 
 .bordeMenu {
-  border: 1px solid white;
+  /**border: 1px solid white;**/
   display: flex;
   display: inline-block; }
 
@@ -183,14 +212,12 @@ main {
     flex-direction: column;
     align-items: center; }
   .areaContenido {
-    background-color: brown;
     display: flex;
     flex-direction: column;
     align-items: center; }
   .nuevosModelos {
     font-size: 50px; }
   .bordeMenu {
-    border: 1px solid white;
     display: flex;
     flex-direction: column; }
   .menuPrincipal ul li {
@@ -203,4 +230,6 @@ main {
     width: 300px; }
   .modelos {
     height: 250px;
-    width: 200px; } }
+    width: 200px; }
+  .formularioTamaño {
+    width: 300px; } }
